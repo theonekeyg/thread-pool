@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS ?= -g -Wall
 LIBS = -pthread
-SRCS = $(shell find . -iname \*.c -printf "%f\n")
+SRCS = $(shell find src/ -iname \*.c -printf "%f\n")
 OBJ = $(addprefix obj/, $(SRCS:.c=.o))
 BIN = main
 
